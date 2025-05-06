@@ -2,7 +2,8 @@ ade
 test_img
 __pycache__
 *.png
-weights
+mobilenet_class.pth
+r101best.pth
 classify
 train_pytorch_model
 test.py
