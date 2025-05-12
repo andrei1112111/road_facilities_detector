@@ -15,18 +15,12 @@ class Segment:
 		self.class_model = create_classify_model("weights/mobilenet_class.pth") 
 		self.segment_model = create_segment_model("weights/r101best.pth")
 
-	def segment(self, frame):
+
+	def predict(self, frame):
 		"""segment frame and return % of bad road"""
 		
 		crops = self._predict_segment(frame)
 		persent = self._predict_class(crops)
-		
-		if persent > 0.30:
-			print("Normal road")
-		elif persent == 0.0:
-			print("Did't see the road")
-		else:
-			print("Probably bad road")
 		
 		return persent
 
