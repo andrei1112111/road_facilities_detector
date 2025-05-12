@@ -2,4 +2,8 @@ ade
 test_img
 __pycache__
 *.png
-unet_epoch_100.pth
+mobilenet_class.pth
+r101best.pth
+classify
+train_pytorch_model
+test.py
