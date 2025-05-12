@@ -6,7 +6,7 @@ UPPER_LEVEL = 255
 class Light:
     """getting the illumination"""
 
-    def __init__(self, class_numbers):
+    def __init__(self):
         """init model"""
         UPPER_LEVEL = 255
         # TODO: Add more configs

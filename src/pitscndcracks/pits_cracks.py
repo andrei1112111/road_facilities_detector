@@ -4,7 +4,7 @@ from ultralytics import YOLO
 class PitsAndCracks:
     """detection of potholes and cracks"""
 
-    def __init__(self, class_numbers, model):
+    def __init__(self, model):
         """init model"""
         self.model = YOLO(model)
         self.conf = 0.25

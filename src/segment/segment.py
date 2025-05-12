@@ -10,10 +10,10 @@ from utils import extract_crops_with_stride
 class Segment:	
 	"""Frame segmentation"""
 
-	def __init__(self):
+	def __init__(self, class_model, segment_model):
 		"""init model"""
-		self.class_model = create_classify_model("weights/mobilenet_class.pth") 
-		self.segment_model = create_segment_model("weights/r101best.pth")
+		self.class_model = create_classify_model(class_model)
+		self.segment_model = create_segment_model(segment_model)
 
 
 	def predict(self, frame):
