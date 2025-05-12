@@ -1,10 +1,10 @@
-FROM python:3
+FROM python:3.9-slim
 
-WORKDIR /usr/src/app
+WORKDIR /
 
-COPY ./src/requirements.txt .
+# Copy requirements first for better caching
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./src .
-
-CMD [ "python", "-u", "./app.py" ]
+# Copy application code
+COPY app.py .

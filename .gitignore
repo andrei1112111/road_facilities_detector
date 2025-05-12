@@ -1,5 +1,2 @@
-ade
-test_img
-__pycache__
-*.png
-unet_epoch_100.pth
+output
+
