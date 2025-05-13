@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  python-app:
+    build: ./
+    volumes:
+      - ${HOST_PROJECT_PATH}:/app/external
+    working_dir: /
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python app.py
