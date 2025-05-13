@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ade
 test_img
 __pycache__
@@ -7,3 +8,7 @@ r101best.pth
 classify
 train_pytorch_model
 test.py
+=======
+output
+
+>>>>>>> aleksey
